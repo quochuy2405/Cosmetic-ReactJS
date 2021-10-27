@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles.scss";
 function Header() {
   return (
@@ -27,15 +28,15 @@ function Header() {
       </div>
       <div className="Header_Nav">
         <div className="Nav_left">
-          <li>home</li>
-          <li>Skin care</li>
-          <li>hair care</li>
-          <li>body care</li>
-          <li>make up</li>
+          <Link to="/" >home</Link >
+          <Link to="#" >Skin care</Link >
+          <Link to="#" >hair care</Link >
+          <Link to="#" >body care</Link >
+          <Link to="#" >make up</Link >
         </div>
         <div className="Nav_right">
-          <li>blog</li>
-          <li>contact</li>
+          <Link to="/blog" >blog</Link >
+          <Link to="#" >contact</Link >
         </div>
       </div>
     </div>
