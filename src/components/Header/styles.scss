@@ -1,0 +1,82 @@
+@import "../../variable.css";
+.Header {
+
+  background-color: var(--background-header);
+  max-height: var(--height-header);
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  & .Header_Nav {
+    padding: 0 100px;
+    text-transform: uppercase;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    background-color: white;
+
+    & li:hover{
+        color: #adc2a9;
+        cursor: pointer;
+    }
+    & .Nav_left,
+    .Nav_right {
+      display: flex;
+      gap: 40px;
+    }
+  }
+  & .Header_top {
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-between;
+    & .Header_logo {
+      width: 120px;
+      height: 35px;
+      margin: auto 0;
+    }
+    & .Header_search {
+      display: flex;
+      width: 300px;
+      height: 40px;
+      margin: auto 0;
+      position: relative;
+      & .Search_icon {
+        text-align: center;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #adc2a9;
+        &:hover {
+          color: rgb(93, 145, 132);
+        }
+      }
+      & input {
+        width: 100%;
+        height: 100%;
+        padding: 5px 30px;
+
+        border-radius: 30px;
+        outline: none;
+        border: none;
+        line-height: 40px;
+        &:focus {
+          border: 2px solid #adc2a9;
+          box-shadow: 1px 1px 10px #adc2a9;
+        }
+      }
+    }
+    & .Header_icon {
+      display: flex;
+      gap: 20px;
+
+      color: rgba(66, 66, 66, 0.671);
+      list-style: none;
+
+      line-height: var(--height-header);
+      cursor: pointer;
+      & li:hover {
+        color: rgb(66, 66, 66);
+      }
+    }
+  }
+}

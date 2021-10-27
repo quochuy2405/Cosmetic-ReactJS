@@ -1,0 +1,24 @@
+.BestSeller{
+    width:70%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-areas: 
+    "h1 h1 h1"
+    "h1 h1 h1";
+    gap: 20px;
+   
+}
+.title_BEST{
+    margin-top: 100px;
+    text-align: center;
+}
+.View{
+    text-align: center;
+    & a{
+        color: #a39974;
+        &:hover{
+            color: #b9d4ce;  
+        }
+    }
+
+}

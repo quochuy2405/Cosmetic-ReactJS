@@ -1,0 +1,57 @@
+.ProductSlider{
+    position: relative;
+    width: 80%;
+    height:370px;
+
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    margin: 30px auto;
+
+    & .btnh{
+        font-size: 24px;
+        width: fit-content;
+        position: absolute;
+        top: 50%;
+        color:#C8E3D4 ;
+        transform: translateY(-50%);
+        z-index: 99;
+        cursor: pointer;
+        &:hover{
+            color:#7eac92 ;
+        }
+        &.btn_next{
+          right: 10px;
+        }
+        &.btn_prev{
+           left: 10px;
+        }
+    }
+    & .Products{
+     position: absolute;
+      display: flex;
+      gap: 30px;
+      height: 100%;
+      transition: all ease 1.2s;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+      }
+      
+
+}
+.View{
+    text-align: center;
+    & a{
+        color: #a39974;
+        &:hover{
+            color: #b9d4ce;  
+        }
+    }
+
+}
+.title_LATEST{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+}

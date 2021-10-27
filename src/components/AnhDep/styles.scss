@@ -1,0 +1,62 @@
+.Anh {
+  padding-top: 100px;
+  display: grid;
+  width: 870px;
+  margin: 0 auto;
+  grid-template-areas:
+    "h1 h2"
+    "h1 h4"
+    "h3 h4";
+  grid-template-columns: 435px 435px;
+  grid-template-rows: 250px 250px 250px;
+  gap: 40px;
+  & .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    & .overlay {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      background-color: rgba(126, 126, 126, 0.404);
+      color: white;
+      text-transform: uppercase;
+      border-radius: 20px;
+      & .title {
+        font-size: 26px;
+      }
+
+      & .Shop_now {
+        font-size: 14px;
+        color: white;
+      }
+    }
+  }
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  & .img:first-child {
+    grid-area: h1;
+  }
+  & .img:nth-child(2) {
+    grid-area: h2;
+  }
+  & .img:nth-child(3) {
+    grid-area: h3;
+  }
+  & .img:nth-child(4) {
+    grid-area: h4;
+  }
+}
