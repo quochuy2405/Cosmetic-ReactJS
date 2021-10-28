@@ -14,7 +14,10 @@
     justify-content: space-between;
      margin-top: -40px;
     & .active{
-      color: #adc2a9;
+      color: #c2ada9;
+      background-color: white;
+      padding: 0 5px 10px 5px;
+      border-radius:5px 5px 0 0 ;
     }
     & a{
       color: black;
