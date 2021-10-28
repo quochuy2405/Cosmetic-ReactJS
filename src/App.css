@@ -31,6 +31,7 @@ body {
   }
   .App .Header .mobile{
    visibility: visible;
+    
   }
   .App .Header .Header_Nav.nav_Mobile{
     display: block;
@@ -61,9 +62,7 @@ body {
 
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
-  .App .Header .Header_Nav.nav_Mobile{
-    top:calc(10px + var(--height-header));
-  }
+  
   .App .Header .Header_top
   {
     display: block;
@@ -78,7 +77,8 @@ body {
   }
   .App .Header .Header_top .Header_icon
   {
-    line-height: 40px;
+     line-height:24px;
+     padding-top: 30px;
     justify-content: center;
     gap: 50px;
   }
@@ -88,11 +88,11 @@ body {
   }
   .App .Product .pro_img {
     width: 100%;
-    height: 130px;
+    height: 240px;
   }
   .App .Product
   {
-    height: 250px;
+    height: 270px;
   }
   .App .BestSeller {
     grid-template-areas: "h1";
