@@ -13,7 +13,9 @@
     list-style: none;
     justify-content: space-between;
      margin-top: -40px;
-
+    & .active{
+      color: #adc2a9;
+    }
     & a{
       color: black;
       text-decoration: none;

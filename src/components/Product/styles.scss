@@ -23,7 +23,8 @@
         opacity: 0.8;
     }
     & .Product_Title{
-
+       width: 80%;
+       margin: 0 auto;
     }
     & .Product_price{
 
@@ -32,7 +33,7 @@
         color: var(--background-header);
         font-size: 34px;
         position: absolute;
-        bottom: 10px;
+        bottom: 0px;
         right: 10px;
         :hover{
             color: #99A799;

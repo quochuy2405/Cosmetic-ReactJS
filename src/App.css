@@ -8,6 +8,10 @@ body{
     font-size: 1.1rem;
     font-family: 'Trebuchet MS', Arial, sans-serif
 }
+.title_pro{
+        margin-top: 100px;
+        text-align: center;
+}
 /* .body_Page{
     padding-top: var(--height-header);
 } */

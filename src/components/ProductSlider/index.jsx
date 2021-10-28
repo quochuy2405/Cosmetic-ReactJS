@@ -66,7 +66,7 @@ function ProductSlider() {
   }, [count]);
   return (
       <>
-      <h2 className="title_LATEST">LATEST PRODUCT</h2>
+     
     <div className="ProductSlider">
       <div
         onClick={() => {

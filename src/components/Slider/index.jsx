@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./styles.scss";
-const List_Img = [
-  { img: "https://imagizer.imageshack.com/img922/2549/B2zMSB.jpg" },
-  { img: "https://imagizer.imageshack.com/img923/9061/9ZFZH7.jpg" },
-  { img: "https://imagizer.imageshack.com/img924/6814/H2oqYZ.jpg" },
-];
-function Slider() {
+
+function Slider(props) {
+  const {List_Img}=props
   const [count, setCount] = useState(1);
   useEffect(() => {
     const dot_Active = document.querySelector(".dot.active");
