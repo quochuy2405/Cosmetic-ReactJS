@@ -10,7 +10,7 @@ function Contact() {
     <div className="Contact">
       <Header />
       <div className="body_Page">
-      <h2 className="title_pro">SKIN CARE</h2>
+      <h2 className="title_pro">{`TÂM SỰ MỎNG <3`}</h2>
       <div className="desc" >
          <p >Liên hệ Bùi Quốc Huy để làm đẹp nhé</p>
          <p>Hầu hết những bạn bắt đầu làm blog và theo đuổi con đường blogging của mình sẽ nhận ra rằng ĐÂY LÀ LÚC ĐỂ THAY ĐỔI.
