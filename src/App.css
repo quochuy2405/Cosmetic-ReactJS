@@ -27,7 +27,7 @@ body {
   }
   .App .ProductSlider
   {
-    height: 250px;
+    height: 270px;
   }
   .App .Header .mobile{
    visibility: visible;
@@ -89,10 +89,6 @@ body {
   .App .Product .pro_img {
     width: 100%;
     height: 240px;
-  }
-  .App .Product
-  {
-    height: 270px;
   }
   .App .BestSeller {
     grid-template-areas: "h1";
