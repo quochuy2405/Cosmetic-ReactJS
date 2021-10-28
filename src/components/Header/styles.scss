@@ -4,7 +4,7 @@
   background-color: var(--background-header);
   max-height: var(--height-header);
   width: 100%;
-  position: relative;
+  position: fixed;
   z-index: 999;
   & .Header_Nav.nav_Mobile{
     position: absolute;

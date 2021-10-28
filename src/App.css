@@ -8,7 +8,9 @@ body {
   font-size: 1.1rem;
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
-
+.body_Page{
+  padding-top: var(--height-header);
+}
 .title_pro {
   margin-top: 100px;
   text-align: center;
@@ -16,7 +18,16 @@ body {
 @media screen and (max-width: 992px) {
   .App .Product .pro_img {
     width: 100%;
+    height: 250px;
+  }
+
+  .App .latest .Product .pro_img {
+    width: 100%;
     height: 150px;
+  }
+  .App .ProductSlider
+  {
+    height: 250px;
   }
   .App .Header .mobile{
    visibility: visible;
@@ -29,6 +40,9 @@ body {
     display: none;
   }
   .App .Product {
+    height: 340px;
+  }
+  .App .latest .Product {
     height: 250px;
   }
   .App .Anh {
@@ -75,6 +89,10 @@ body {
   .App .Product .pro_img {
     width: 100%;
     height: 130px;
+  }
+  .App .Product
+  {
+    height: 250px;
   }
   .App .BestSeller {
     grid-template-areas: "h1";

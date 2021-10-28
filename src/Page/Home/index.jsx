@@ -45,8 +45,11 @@ function Home() {
             <Header/>
             <div className="body_Page">
                  <Slider List_Img={List_Img}/>
-                 <h2 className="title_pro">LATEST PRODUCT</h2>
-                 <ProductSlider />
+                 <div className="latest">
+                     <h2 className="title_pro ">LATEST PRODUCT</h2>
+                        <ProductSlider />
+                 </div>
+                 
                  <h2 className="title_pro">BEST SELLER</h2>
                  <BestSeller Listproduct={bestSeller}/>
                  <Anhdep/>
