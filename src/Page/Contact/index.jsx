@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Header from "./../../components/Header/index";
 import Anhdep from "./../../components/AnhDep/index";
-
+import './styles.scss'
 function Contact() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -11,7 +11,7 @@ function Contact() {
       <Header />
       <div className="body_Page">
       <h2 className="title_pro">SKIN CARE</h2>
-      <div className="desc" style={{textAlign:"center",width:"50%",margin:"0 auto",lineHeight:"34px",border:"3px solid ",borderRadius:"30px"}}>
+      <div className="desc" >
          <p >Liên hệ Bùi Quốc Huy để làm đẹp nhé</p>
          <p>Hầu hết những bạn bắt đầu làm blog và theo đuổi con đường blogging của mình sẽ nhận ra rằng ĐÂY LÀ LÚC ĐỂ THAY ĐỔI.
 
