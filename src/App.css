@@ -12,6 +12,7 @@ body {
   padding-top: var(--height-header);
 }
 .title_pro {
+  padding: 10px 0;
   margin-top: 100px;
   text-align: center;
 }
