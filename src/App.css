@@ -8,10 +8,72 @@ body{
     font-size: 1.1rem;
     font-family: 'Trebuchet MS', Arial, sans-serif
 }
+
 .title_pro{
         margin-top: 100px;
         text-align: center;
 }
-/* .body_Page{
-    padding-top: var(--height-header);
-} */
+@media screen and (max-width: 992px) {
+    .App .Product .pro_img {
+        width: 100%;
+        height: 150px;
+    }
+    .App .Header .Header_Nav,.App .Header_icon span
+    {
+        display: none;
+    }
+    .App .Product {
+        height: 250px;
+    }
+    .App .Anh {
+        grid-template-areas:
+          "h1"
+          "h2"
+          "h3"
+          "h4";
+        grid-template-columns: 435px ;
+        grid-template-rows: 250px ;
+      }
+      .App .BestSeller{
+        grid-template-areas: "h1 h1"; 
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .App .Product .pro_img {
+        width: 100%;
+        height: 130px;
+    }
+   .App .BestSeller{
+        grid-template-areas: "h1"; 
+    }
+    .App .Product .btn_plus {
+        position: relative;
+        display: block;
+        bottom: 0px;
+       left: 45%;
+
+    }
+   
+   .App .Anh {
+    grid-template-areas:
+      "h1"
+      "h2"
+      "h3"
+      "h4";
+    grid-template-columns: 235px ;
+    grid-template-rows: 250px ;
+  }
+  .App .content_slider{
+      
+      display: block;
+
+  }
+  .App .Header .Header_top .Header_logo {
+      display: none;
+  }
+  .App .content_slider li:not(:first-child){
+    border-top: 1px solid rgba(94, 91, 91, 0.281);
+  }
+}

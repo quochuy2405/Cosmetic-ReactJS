@@ -45,13 +45,14 @@
    
 }
 .content_slider{
-    height: 80px;
+    padding: 20px;
     background-color: var(--background-header);
     display: flex;
     list-style: none;
     justify-content: space-around;
     text-align: center;
     & li {
+        padding: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;

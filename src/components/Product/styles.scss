@@ -21,10 +21,15 @@
         padding-top:10px ;
         text-align: center;
         opacity: 0.8;
+     
     }
     & .Product_Title{
        width: 80%;
        margin: 0 auto;
+       height: 42px; 
+       overflow: hidden; 
+       text-overflow: ellipsis; 
+       white-space: pre-wrap;
     }
     & .Product_price{
 
@@ -35,6 +40,7 @@
         position: absolute;
         bottom: 0px;
         right: 10px;
+        width: fit-content;
         :hover{
             color: #99A799;
         }

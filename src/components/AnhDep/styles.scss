@@ -1,7 +1,7 @@
 .Anh {
   padding-top: 100px;
   display: grid;
-  width: 870px;
+  width: 50%;
   margin: 0 auto;
   grid-template-areas:
     "h1 h2"
@@ -10,6 +10,7 @@
   grid-template-columns: 435px 435px;
   grid-template-rows: 250px 250px 250px;
   gap: 40px;
+  justify-content: space-around;
   & .img {
     position: relative;
     width: 100%;
