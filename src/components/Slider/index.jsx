@@ -41,7 +41,7 @@ function Slider() {
         }%)`;
         dots[count].classList.add("active");
       }
-    }, 3000);
+    }, 3500);
     return () => clearInterval(interval);
   }, [count]);
   return (

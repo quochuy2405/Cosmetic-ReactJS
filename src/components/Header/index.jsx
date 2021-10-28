@@ -11,7 +11,7 @@ function Header() {
           className="Header_logo"
         />
         <div className="Header_search">
-          <input type="text" />
+          <input type="text" placeholder="Search" />
           <i className="fas fa-search Search_icon"></i>
         </div>
         <div className="Header_icon">
