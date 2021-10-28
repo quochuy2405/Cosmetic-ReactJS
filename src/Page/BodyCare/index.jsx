@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./../../components/Header/index";
 import Anhdep from "./../../components/AnhDep/index";
 import Slider from './../../components/Slider/index';
@@ -51,6 +51,9 @@ const hairCare = [
     },
   ];
 function BodyCare() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="BodyCare">
        <Header />

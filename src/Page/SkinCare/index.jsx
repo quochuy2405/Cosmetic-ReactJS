@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BestSeller from "../../components/BestSeller";
 import Header from "./../../components/Header/index";
 import Slider from "./../../components/Slider/index";
@@ -53,6 +53,9 @@ const List_Img = [
   },
 ];
 function SkinCare() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="SkinCare">
       <Header />

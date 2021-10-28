@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Anhdep from "../../components/AnhDep";
 import Header from "../../components/Header";
 
 function Blog() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="Blog">
       <Header />

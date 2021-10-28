@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./../../components/Header/index";
 import Anhdep from "./../../components/AnhDep/index";
 
 function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="Contact">
       <Header />

@@ -6,33 +6,33 @@ import { useState } from "react";
 const Listproduct = [
   {
     link_img: "https://imagizer.imageshack.com/img923/7854/RmX3bd.jpg",
-    title: "Title",
-    price: 70,
+    title: "Augustinus Bader the Rich Cream",
+    price: 170,
   },
   {
     link_img: "https://imagizer.imageshack.com/img924/9743/qx2lhC.jpg",
-    title: "Title",
-    price: 70,
+    title: "Moisture Co-Wash Whipped Cleansing Conditioner",
+    price: 307,
   },
   {
     link_img: "https://imagizer.imageshack.com/img922/9882/qhXgmH.jpg",
-    title: "Title",
-    price: 70,
+    title: "Royal Oils Deep Moisture Masque",
+    price: 339,
   },
   {
     link_img: "https://imagizer.imageshack.com/img924/2301/D5Qpr4.jpg",
-    title: "Title",
-    price: 70,
+    title: "Inforcer Brush Proof Anti-Breakage Detangling ",
+    price: 80,
   },
   {
     link_img: "https://imagizer.imageshack.com/img923/8624/ssAUCe.jpg",
-    title: "Title",
-    price: 70,
+    title: "Bain Densifique Shampoo and Conditioner",
+      price: 310,
   },
   {
     link_img: "https://imagizer.imageshack.com/img924/9255/KbBM3Z.jpg",
-    title: "Title",
-    price: 70,
+    title: "Keratin Smooth Color Shampoo and Conditioner",
+      price: 99,
   },
 ];
 function ProductSlider() {
