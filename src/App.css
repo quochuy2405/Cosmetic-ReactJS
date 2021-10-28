@@ -1,79 +1,107 @@
 @import "./variable.css";
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-size: 1.1rem;
-    font-family: 'Trebuchet MS', Arial, sans-serif
+body {
+  font-size: 1.1rem;
+  font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-.title_pro{
-        margin-top: 100px;
-        text-align: center;
+.title_pro {
+  margin-top: 100px;
+  text-align: center;
 }
 @media screen and (max-width: 992px) {
-    .App .Product .pro_img {
-        width: 100%;
-        height: 150px;
-    }
-    .App .Header .Header_Nav,.App .Header_icon span
-    {
-        display: none;
-    }
-    .App .Product {
-        height: 250px;
-    }
-    .App .Anh {
-        grid-template-areas:
-          "h1"
-          "h2"
-          "h3"
-          "h4";
-        grid-template-columns: 435px ;
-        grid-template-rows: 250px ;
-      }
-      .App .BestSeller{
-        grid-template-areas: "h1 h1"; 
-    }
+  .App .Product .pro_img {
+    width: 100%;
+    height: 150px;
   }
-  
-  /* On screens that are 600px or less, set the background color to olive */
-  @media screen and (max-width: 600px) {
-    .App .Product .pro_img {
-        width: 100%;
-        height: 130px;
-    }
-   .App .BestSeller{
-        grid-template-areas: "h1"; 
-    }
-    .App .Product .btn_plus {
-        position: relative;
-        display: block;
-        bottom: 0px;
-       left: 45%;
-
-    }
-   
-   .App .Anh {
+  .App .Header .mobile{
+   visibility: visible;
+  }
+  .App .Header .Header_Nav.nav_Mobile{
+    display: block;
+  }
+  .App .Header .Header_Nav,
+  .App .Header_icon span {
+    display: none;
+  }
+  .App .Product {
+    height: 250px;
+  }
+  .App .Anh {
     grid-template-areas:
       "h1"
       "h2"
       "h3"
       "h4";
-    grid-template-columns: 235px ;
-    grid-template-rows: 250px ;
+    grid-template-columns: 435px;
+    grid-template-rows: 250px;
   }
-  .App .content_slider{
-      
-      display: block;
+  .App .BestSeller {
+    grid-template-areas: "h1 h1";
+  }
+}
 
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .App .Header .Header_Nav.nav_Mobile{
+    top:calc(10px + var(--height-header));
+  }
+  .App .Header .Header_top
+  {
+    display: block;
+    padding: 10px 0;
+  }
+  .App .Header .mobile
+  {
+    top:70%;
+  }
+  .App .Header .Header_top .Header_search {
+    width: 100%;
+  }
+  .App .Header .Header_top .Header_icon
+  {
+    line-height: 40px;
+    justify-content: center;
+    gap: 50px;
+  }
+  .App .Header .Header_top .Header_search {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .App .Product .pro_img {
+    width: 100%;
+    height: 130px;
+  }
+  .App .BestSeller {
+    grid-template-areas: "h1";
+  }
+  .App .Product .btn_plus {
+    position: relative;
+    display: block;
+    bottom: 0px;
+    left: 45%;
+  }
+
+  .App .Anh {
+    grid-template-areas:
+      "h1"
+      "h2"
+      "h3"
+      "h4";
+    grid-template-columns: 235px;
+    grid-template-rows: 250px;
+  }
+  .App .content_slider {
+    display: block;
   }
   .App .Header .Header_top .Header_logo {
-      display: none;
+    display: none;
   }
-  .App .content_slider li:not(:first-child){
+  .App .content_slider li:not(:first-child) {
     border-top: 1px solid rgba(94, 91, 91, 0.281);
   }
 }

@@ -6,13 +6,51 @@
   width: 100%;
   position: relative;
   z-index: 999;
+  & .Header_Nav.nav_Mobile{
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    right: -100%;
+    padding: 0;
+    width: 200px;
+    top:calc(40px + var(--height-header));
+    height: calc(100vh - var(--height-header));
+   
+    background-color: #f0fcee;
+    transition: all ease 1s;
+    border-radius: 10px 0 0 10px;
+
+    & a{
+      display: block;
+      margin: 10px 0;
+      padding: 0 20px;
+    }
+    & .Nav_right,.Nav_left
+    {
+      display: block;
+    }
+  }
+  & .mobile{
+    visibility: hidden;
+    font-size: 30px;
+    position: absolute;
+    top:50%;
+    right: 5%;
+    transform: translateY(-50%);
+  }
+  & #nav_mobile{
+    display: none;
+  }
+
   & .Header_Nav {
-    padding: 10px 100px;
+    padding: 10px 10%;
     text-transform: uppercase;
     display: flex;
     list-style: none;
     justify-content: space-between;
      margin-top: -40px;
+   
+   
     & .active{
       color: #c2ada9;
       background-color: white;
@@ -35,7 +73,7 @@
   }
   & .Header_top {
     display: flex;
-    padding: 0 100px;
+    padding: 0 10%;
     justify-content: space-between;
     & .Header_logo {
       width: 120px;
@@ -46,7 +84,7 @@
       display: flex;
       width: 300px;
       height: 40px;
-      margin: auto 0;
+      margin: auto 15px;
       position: relative;
       & .Search_icon {
         text-align: center;
@@ -88,4 +126,9 @@
       }
     }
   }
+}
+#nav_mobile:checked ~ .nav_Mobile{
+  visibility: visible;
+  transition: all ease 0.5s;
+  right: 0;
 }

@@ -9,6 +9,7 @@ function Header() {
   };
   return (
     <div className="Header">
+    
       <Login open={open} setOpen={setOpen}/>
       <div className="Header_top">
         <img
@@ -30,6 +31,11 @@ function Header() {
           <li onClick={handleClickOpen}>
             <i className="far fa-user"></i> <span>Login</span>
           </li>
+       
+         
+   
+         
+   
         </div>
       </div>
       <div className="Header_Nav">
@@ -45,6 +51,22 @@ function Header() {
           <NavLink to="/contact" exact>contact</NavLink >
         </div>
       </div>
+      <input type="checkbox" id="nav_mobile" name="nav_mobile"/>
+      <div className="Header_Nav nav_Mobile">
+      <div className="Nav_left">
+            <label htmlFor="nav_mobile" style={{padding:"10px"}}>&#x2715;</label>
+          <NavLink to="/"exact >home</NavLink >
+          <NavLink to="/skincare" exact>Skin care</NavLink >
+          <NavLink to="/haircare" exact>hair care</NavLink >
+          <NavLink to="/bodycare" exact>body care</NavLink >
+          <NavLink to="/makeup" exact>make up</NavLink >
+        </div>
+        <div className="Nav_right">
+          <NavLink to="/blog" exact>blog</NavLink >
+          <NavLink to="/contact" exact>contact</NavLink >
+        </div>
+      </div>
+      <label htmlFor="nav_mobile"> <i class="fas fa-hamburger mobile"></i></label>
     </div>
   );
 }
