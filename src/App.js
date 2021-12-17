@@ -13,6 +13,7 @@ import HairCare from './Page/HairCare/index';
 import Makeup from './Page/MakeUp/index';
 import SkinCare from './Page/SkinCare/index';
 import NotFound from './Page/404/index';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/skincare" component={SkinCare} exact/>
         <Route path="/:id" component={NotFound} />
       </Switch>
+      <MessengerCustomerChat pageId='263911365490064' appId='604715267250109' />
     </div>
   );
 }

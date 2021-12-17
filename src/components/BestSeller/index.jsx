@@ -1,6 +1,6 @@
 import React from "react";
-import "./styles.scss";
 import Product from "../Product/index";
+import "./styles.scss";
 
 function BestSeller(props) {
   const {Listproduct}=props
@@ -15,7 +15,6 @@ function BestSeller(props) {
          
             ))}
       </div>
-      <p className="View"><a href="#">View collect</a></p>
      </>
   );
 }

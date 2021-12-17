@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import "./styles.scss";
+import { NavLink } from "react-router-dom";
 import Login from "./../Login/index";
+import "./styles.scss";
 function Header() {
   const [open, setOpen] =useState(false);
   const handleClickOpen = () => {
