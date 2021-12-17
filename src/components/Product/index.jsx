@@ -17,9 +17,7 @@ function Product(props) {
                 ${Product.price}
                 </p>
             </div>
-            <div className="btn_plus">
-                 <i className="fas fa-plus-circle"></i>
-            </div>
+         
         </div>
     )
 }
